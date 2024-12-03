@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Sayfası</title>
+  </head>
+  <header style="width: 100%; background-color: rgb(214, 245, 235)">
+    <h1 style="text-align: center">Üyelik Sayfası</h1>
+  </header>
+  <body>
+    <div
+      id="left-container"
+      style="width: 25%; min-height: 600px; border-style: dotted; float: left"
+    ></div>
+    <div
+      id="main-container"
+      style="width: 50%; min-height: 600px; border-style: dotted; float: left"
+    >
+      <form action="" method="post">
+        <br /><br /><br />
+        <label for="username">Kullanıcı Adı:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Kullanıcı adını giriniz"
+        /><br />
+
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" /><br />
+
+        <label for="password-again">Şifre Tekrar:</label>
+        <input type="password" id="password-again" /><br />
+
+        <label for="bday">Doğum Tarihi:</label>
+        <input type="date" id="bday" /><br />
+
+        <label for="">Cinsiyet:</label>
+
+        <label for="male">Erkek</label>
+        <input type="radio" id="male" name="gender" />
+
+        <label for="female">Kadın</label>
+        <input type="radio" id="female" name="gender" /> <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" /> <br /><br />
+
+        <label for="">Telefon</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="539-123-4565"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+
+        <label for="address">Adres:</label>
+        <textarea name="" id="address" rows="3" cols="25"></textarea
+        ><br /><br />
+
+        <label for="city">Şehir:</label>
+        <select name="" id="city">
+          <option value="yozgat">Yozgat</option>
+          <option value="ankara">Ankara</option>
+          <option value="istanbul">İstanbul</option>
+        </select>
+        <br /><br />
+
+        <label for="sartlar">Üyelik Şartları:</label>
+        <input type="checkbox" id="sartlar" /> <br />
+        <br />
+
+        <label for="">Adet:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1" />
+        <br /><br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </div>
+    <div
+      id="right-container"
+      style="width: 21%; min-height: 600px; border-style: dotted; float: left"
+    ></div>
+  </body>
+  <footer>
+    <a href="mailto:cagri.arisoy@bozok.edu.tr">Bize Ulaşın</a>
+    <hr />
+    &copy; Tüm Hakları Saklıdır
+    <hr />
+  </footer>
+</html>
